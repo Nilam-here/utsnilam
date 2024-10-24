@@ -6,7 +6,7 @@ from matplotlib.patches import Circle
 
 
 st.title("Fisika Komputasi Awan")
-st.title("Amanda Desi Dwi Nilamsari Husnaa :nerd:")
+st.title("Amanda Desi Dwi Nilamsari Husnaa :monocle:")
 circle = Circle((0, 0), 1, color='red', fill=False, linewidth=2, linestyle='-', alpha=0.2)
 x = []
 y = []
@@ -20,7 +20,7 @@ if st.button("Data"):
     for i in range(111):
         x0 = 2*(random.random() - .5)
         y0 = 2*(random.random() - .5)
-        if ((x0**2+y0**2)>1.):
+        if ((x0*2+y0*2)>1.):
             if y0>0:
                 y0 = np.sqrt(1-x0**2)
             else:
